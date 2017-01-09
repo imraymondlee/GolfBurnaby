@@ -1,0 +1,32 @@
+table, th, td, tr{
+    
+    border-collapse: collapse;
+    color: white;
+    text-align: center;
+}
+
+th,td, tr{
+	padding:4px; 
+}
+
+.toprow{
+	background-color: #4A7061;
+}
+
+.secondrow{
+	background-color: #5CAD00;
+}
+
+.greenbackground{
+	background-color: #142E25;
+}
+
+.greybackground{
+	background-color: grey;
+}
+
+@media (max-width: 760px){
+	table{
+		width: 100%;
+	}
+}
