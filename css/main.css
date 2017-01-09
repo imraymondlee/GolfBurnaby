@@ -1,0 +1,517 @@
+/*Styling fonts*/
+html{
+	font-family: 'Roboto', sans-serif;
+	color: black;
+	background-color: rgb(240,240,240);
+}
+
+p{
+	font-weight: 300;
+}
+
+/*Removing bullets from list*/
+ul{
+	list-style: none;
+}
+
+header{	
+	width: 100%;
+	position: fixed;
+	padding-top: 0.3rem;
+	padding-bottom: 0.5rem;
+	background-color: rgba(255,255,255,0.9);
+
+	/*adding a shadow to the bottom of the header, to add a layer effect*/
+	-webkit-box-shadow: inset 0px -15px 20px -20px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 0px -15px 20px -20px rgba(0,0,0,0.75);
+	box-shadow: inset 0px -15px 20px -20px rgba(0,0,0,0.75);
+}
+
+.spacer{
+	height: 4em;
+}
+
+
+nav{
+	display: inline-block;
+	font-weight: 300;
+	padding-top: 1.1rem;
+	position: absolute;
+	right: 8%;
+}
+
+#mobilemenubutton{
+	display: none;
+}
+
+@media (max-width: 890px){
+	nav{
+		display: none;
+		position: relative;
+		right: 0;
+	}
+	.spacer{
+		height: 6em;
+	}
+}
+
+@media (max-width: 890px){
+	#mobilemenubutton{
+		text-align: center;
+		display: block;
+		padding-top: 0rem;
+	}
+}
+
+@media (min-width: 890px){
+	nav{
+		display: inline-block;
+		position: absolute;
+		right: 8%;
+	}
+}
+
+/*Footer. Changing colour, margin and padding*/
+footer{
+	background-color: rgb(74,112,97);
+	padding-top: 1rem;
+	margin-top: 3rem;
+	padding-bottom: 2rem;
+	text-align: center;
+}
+
+footer a{
+	font-size: 0.9rem;
+	color: white;
+	margin: 0rem 0.3rem;
+	padding: 0rem 1.5rem;
+}
+
+/*Headings for each page*/
+h1{
+	margin-bottom: 0rem;
+	font-weight: 400;
+	font-size: 4em;
+	color: white;
+	text-shadow: 0px 0px 10px #000000;
+}
+
+/*Heading for Burnaby Golf*/
+/*h2{
+	display: inline;
+	padding: 1.1rem;
+	font-weight: 400;
+	font-size: 2rem;
+	color: rgb(92,173,0);
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+}*/
+/*Changing colour when hovered*/
+/*h2:hover{
+	color: rgb(74,112,97);
+}*/
+
+h3{
+
+	color: rgb(74,112,97);
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+}
+
+/*Hover h3 headings*/
+a>h3:hover{
+	color: rgb(92,173,0);
+}
+
+/*Link colours*/
+a{
+	text-decoration: none;
+	color: black;
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+}
+/*Hover links*/
+a:hover{
+	color: rgb(92,173,0);
+}
+
+h4{
+	color:white;
+	text-align: center;
+}
+
+h5{
+	font-size: 1.1rem;
+	font-weight: 500;
+	color: black;
+	padding-top: 3rem;
+	margin-bottom: 0rem;
+}
+
+h6{
+	margin-top: 0;
+	font-size: 1.1rem;
+	color:black;
+	text-align: center;
+}
+
+.bookTeeTime{
+	margin-top: 2rem;
+}
+
+#formspace{
+	min-height: 10rem;
+	min-width: 1em;
+	color: rgba(150,255,100,0.1);
+}
+li{
+	padding-bottom: 2%;
+}
+
+p{
+	font-weight: 300;
+}
+
+.learnmore{
+	font-weight: 500;
+	color:rgb(74,112,97);
+}
+
+.overviewalign{
+	padding-right: 20%;
+}
+
+.overview2align{
+	padding-left: 20%;
+	
+}
+
+@media (max-width: 890px){
+	.overviewalign{
+		padding-right: 5%;
+		padding-left: 5%;
+	}
+	.overview2align{
+		padding-right: 5%;
+		padding-left: 5%;
+		text-align: left;
+	}
+}
+
+.align{
+	margin: 0rem 2.5rem;
+}
+
+/* spacer/divider font style*/
+.style{
+	color:white;
+	/*max-width:50rem;*/
+	/*text-align: center;*/
+	/*margin: 0rem 20rem;*/
+		text-align: center;
+	margin:0 20rem;
+
+}
+
+.spacing{
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+}
+
+/*spacer/divider of the page*/
+.box{
+		text-align: center;
+	background-color: rgb(74,112,97);
+	display: inline-block;
+	width: 100%; 
+	min-height:150px;
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+
+	-webkit-box-shadow: inset 0px 0px 20px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 0px 0px 20px 0px rgba(0,0,0,0.75);
+	box-shadow: inset 0px 0px 20px 0px rgba(0,0,0,0.75);		/*inner shadow to show depth*/
+}
+
+
+/*Banners for each page*/
+.bannerhome{
+	width: 100%;	/*makes the element span across the width of the page*/
+	background-image: url("../img/homepageimage.jpg"); /*background image for the element*/
+	background-size: cover;  /*the image will be resized to fit the element at all sizes*/
+	background-position: center center;  /*image will stay centered while resizing*/
+	margin-bottom: 3rem;
+
+}
+.banneroverview{
+	width: 100%;
+	/*height: 300px;*/
+	background-image: url("../img/overviewimage.jpg");
+	background-size: cover;
+	background-position: center center;
+	margin-bottom: 3%;
+	
+}
+.bannerfacilities{
+	width: 100%;
+	/*height: 300px;*/
+	background-image: url("../img/facilities.jpg");
+	background-size: cover;
+	background-position: center center;
+	margin-bottom: 3%;
+}
+.bannerriverway{
+	width: 100%;
+	/*height: 300px;*/
+	background-image: url("../img/riverway2.jpg");
+	background-size: cover;
+	background-position: center center;
+	margin-bottom: 3%;
+}
+.bannerbby{
+	width: 100%;
+	/*height: 300px;*/
+	background-image: url("../img/BurnabyM.jpg");
+	background-size: cover;
+	background-position: center center;
+	margin-bottom: 3%;
+}
+.bannerbookings{
+	width: 100%;
+	/*height: 300px;*/
+	background-image: url("../img/home-banner.jpg");
+	background-size: cover;
+	background-position: center center;
+	margin-bottom: 3%;
+}
+
+.bannertext{
+	text-align: center;
+	padding-top: 10%; /*adding padding to the top of the text*/
+
+}
+
+.riverwayimage1{
+	width: 100%;
+	background-image: url("../img/riverwaypage1.jpg");
+	background-size: cover;
+	background-position: center center;
+	min-height: 20em;
+}
+
+.riverwayimage2{
+	width: 100%;
+	background-image: url("../img/riverwaypage2.jpg");
+	background-size: cover;
+	background-position: center center;
+	min-height: 20em;
+}
+
+.bmountainimage1{
+	width: 100%;
+	background-image: url("../img/bmountainpage1.jpg");
+	background-size: cover;
+	background-position: center center;
+	min-height: 20em;
+}
+
+.bmountainimage2{
+	width: 100%;
+	background-image: url("../img/bmountainpage2.jpg");
+	background-size: cover;
+	background-position: center center;
+	min-height: 20em;
+}
+
+.calendarImage{
+	display: block;
+}
+
+@media(max-width: 450px){
+	.calendarImage{width: 100%; height: auto;}
+}
+
+.bg-image-height{
+	width: 100%;
+
+	-webkit-box-shadow: inset 0px 0px 20px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 0px 0px 20px 0px rgba(0,0,0,0.75);
+	box-shadow: inset 0px 0px 20px 0px rgba(0,0,0,0.75);		/*inner shadow to show depth*/
+	min-height: 15em;
+
+	text-align: center;
+}
+
+/*background box for booking a tee time*/
+.teetimeBackground{
+
+	margin: 5%;
+	margin-top: 0rem;
+	padding: 0 30%;
+	padding-bottom: 2rem;
+	background-color: rgba(150,255,100,0.1);
+	text-align: center;
+
+}
+
+.formwrapper{
+	width: 100%;
+	text-align: center;
+}
+
+@media(max-width: 900px){
+	.teetimeBackground{
+		padding: 0;
+		padding-bottom:  2rem;
+	}
+}
+
+
+/*media query. when the screen is at least 768px wide, the banner element becomes 320px in height*/
+@media (min-width: 768px){
+	.bg-image-height{height: 320px;}
+}
+
+/*media query. when the screen is at least 1200px wide, the banner element becomes 400px in height*/
+@media (min-width: 1200px){
+	.bg-image-height{height: 400px;}
+}
+
+/*media query. when the screen is at least 1400px wide, the banner element becomes 400px in height*/
+@media (min-width: 1400px){
+	.bg-image-height{height: 500px;}
+}
+
+
+
+@media (max-width: 1200px){
+	.style{margin: 0 10rem;}
+}
+
+@media (max-width: 768px){
+	#newsimage{text-align: center;}
+	.style{margin: 1rem 2rem;}
+}
+
+
+#wrapper{
+	text-align: center;
+	
+}
+/*Latest news box*/
+.latestnews{
+	padding-bottom: 1.5%;
+	width: 80%;
+}
+
+@media (max-width: 768px){
+	#wrapper{margin-left: 0;}
+
+	.latestnews{width: 100%;}
+}
+
+/*Creating buttons*/
+.button{
+	color: white;
+	padding:0.5rem 1.25rem;
+	background-color: rgb(74,112,97);
+
+	-webkit-transition: background-color 0.2s;
+	transition: background-color 0.2s;
+
+}
+
+.buttonsection{
+	width: 100%;
+	
+	margin-top: -2.5em;
+	margin-bottom: 1em;
+	padding: 1em;
+	text-align: center;
+	
+}
+
+.ratessection{
+	width: 100%;
+	
+	margin-top: 2em;
+	margin-bottom: 1em;
+	padding: 1em;
+	text-align: center;
+	
+}
+
+@media (max-width: 768px){
+	.buttonsection{margin-top: 1em;}
+}
+
+.quotesection{
+	width: 100%;
+	background-color: #FFFFFF;
+	padding:5% 0;
+
+	text-align: center;
+
+
+	-webkit-box-shadow: inset 0px 0px 20px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 0px 0px 20px 0px rgba(0,0,0,0.75);
+	box-shadow: inset 0px 0px 20px 0px rgba(0,0,0,0.75);		/*inner shadow to show depth*/
+}
+
+#quotewrapper{
+	margin: 0 20%;
+	text-align: center;
+}
+
+#coursepara{
+	width: 100%;
+	padding: 3rem;
+}
+
+#riverwayparas{
+	padding: 5em 0;
+	text-align: left;
+}
+
+#riverwaymaps{
+	width: 100%;
+	height: 30em;
+	padding: 5em 0;
+	text-align: center;
+}
+
+#riverwayaddress{
+	margin-top: 20%;
+}
+
+@media(max-width: 1200px){
+	#riverwayaddress{
+		margin-top: 0;
+	}
+	#riverwaymaps{
+		height: 35em;
+	}
+}
+
+.parawrapper{
+	width: 30rem;
+}
+
+.button:hover{
+	background-color: rgb(20,46,37);
+	color: white;
+}
+
+
+/*Back to top bar*/
+.back-to-top{
+	color: white;
+	background: rgb(174,199,186);
+	opacity:0.9;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	display: none;
+}
